@@ -1,0 +1,47 @@
+name: random_sweep_with_gt_bayes
+program: train_sweep_thermal.py
+method: bayes
+metric:
+  name: test/loss_viewpoint - lpips_gt
+  goal: minimize
+parameters:
+  smoke_opacity_weight:
+    distribution: uniform
+    min: 0.3
+    max: 2.0
+  smoke_color_weight:
+    distribution: uniform
+    min: 1.0
+    max: 3.0
+  densify_grad_threshold_surface:
+    distribution: uniform
+    min: 0.00008
+    max: 0.0004
+  densify_grad_threshold_smoke:
+    distribution: uniform
+    min: 0.00008
+    max: 0.0004
+  smoke_uniformity_color_weight:
+    distribution: uniform
+    min: 2.0
+    max: 5.0
+  thermal_weight:
+    distribution: uniform
+    min: 1.0
+    max: 4.0
+  depth_l1_weight_init:
+    distribution: uniform
+    min: 0.1
+    max: 10.0
+  valid_region_weight:
+    distribution: uniform
+    min: 0.1
+    max: 0.5
+  invalid_region_weight:
+    distribution: uniform
+    min: 0.01
+    max: 0.5
+command:
+  - python3
+  - train_sweep_thermal.py
+  - "${args}"
