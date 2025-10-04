@@ -4,8 +4,8 @@
 SmokeSeer jointly reconstructs a smoke-filled scene and removes smoke using 3D Gaussian Splatting, leveraging RGB and thermal images. Thermal provides robust geometry cues through smoke; RGB provides texture. We decompose the scene into surface and smoke Gaussians and render smoke-free views by omitting smoke Gaussians.
 
 ### Resources
-- Project website: [imaging.cs.cmu.edu/smokeseer](https://imaging.cs.cmu.edu/smokeseer/)
-- Data folder (Google Drive): [Dataset folder](https://drive.google.com/drive/folders/1xwmLNRIaZYPERdSBJVWpu5P80DSEu6Ts?usp=sharing)
+- [Project website](https://imaging.cs.cmu.edu/smokeseer/)
+- [Dataset folder](https://drive.google.com/drive/folders/1xwmLNRIaZYPERdSBJVWpu5P80DSEu6Ts?usp=sharing)
 
 ### Quick Start
 1. Environment
