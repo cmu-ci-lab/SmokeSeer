@@ -7,6 +7,10 @@ SmokeSeer jointly reconstructs a smoke-filled scene and removes smoke using 3D G
 - [Project website](https://imaging.cs.cmu.edu/smokeseer/)
 - [Dataset folder](https://drive.google.com/drive/folders/1xwmLNRIaZYPERdSBJVWpu5P80DSEu6Ts?usp=sharing)
 
+real.zip contains the colmap parameters and the frames used for real-world experiments in the paper. We also include the raw videos from which we extracted the frames. 
+
+synthetic.zip contains the blender camera parameters and the frames used for synthetic data experiments in the paper. 
+
 ### Quick Start
 1. Environment
 - Install Conda (Miniconda/Anaconda).
