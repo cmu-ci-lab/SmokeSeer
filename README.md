@@ -3,6 +3,10 @@
 ### Overview
 SmokeSeer jointly reconstructs a smoke-filled scene and removes smoke using 3D Gaussian Splatting, leveraging RGB and thermal images. Thermal provides robust geometry cues through smoke; RGB provides texture. We decompose the scene into surface and smoke Gaussians and render smoke-free views by omitting smoke Gaussians.
 
+### Resources
+- Project website: [imaging.cs.cmu.edu/smokeseer](https://imaging.cs.cmu.edu/smokeseer/)
+- Data folder (Google Drive): [Dataset folder](https://drive.google.com/drive/folders/1xwmLNRIaZYPERdSBJVWpu5P80DSEu6Ts?usp=sharing)
+
 ### Quick Start
 1. Environment
 - Install Conda (Miniconda/Anaconda).
@@ -94,4 +98,19 @@ Stage 2 additionally saves smoke/thermal-specific checkpoints and optional test 
 - By default, large folders like `output/` and `wandb/` are git-ignored. Scripts are sanitized to avoid user-specific absolute paths.
 
 ### Citation
-If you use this repository, please cite our SmokeSeer paper.
+If you use this repository, please cite our SmokeSeer paper:
+
+Paper: [arXiv:2509.17329](https://arxiv.org/abs/2509.17329)
+
+```bibtex
+@article{jain2025smokeseer,
+  title={{SmokeSeer: 3D Gaussian Splatting for Smoke Removal and Scene Reconstruction}},
+  author={Neham Jain and Andrew Jong and Sebastian Scherer and Ioannis Gkioulekas},
+  year={2025},
+  eprint={2509.17329},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2509.17329},
+}
+```
+
